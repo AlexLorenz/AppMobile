@@ -22,8 +22,9 @@
 
     <EditText
         android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:drawablePadding="10dp"
         android:hint="E-mail"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,21 +32,22 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.461" />
+        app:layout_constraintVertical_bias="0.426" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
         android:hint="Senha"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.344"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintVertical_bias="0.53" />
 
     <Button
         android:id="@+id/button2"
@@ -63,33 +65,49 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.933" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
         android:background="#800000"
-        app:srcCompat="@drawable/google"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="620dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/google" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
         android:background="#800000"
-        app:srcCompat="@drawable/facebook"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="620dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/facebook" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginBottom="28dp"
+        android:text="Ou acesse com:"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="587dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
