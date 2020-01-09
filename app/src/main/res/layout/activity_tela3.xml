@@ -4,4 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tela3"/>
+    tools:context=".tela3">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/background2"
+        android:minHeight="60dp"
+        app.titleTextColor="@android:color/white"
+        tools:layout_editor_absoluteX="-27dp">
+
+        <TextView
+            android:layout_width="375dp"
+            android:layout_height="match_parent"
+            android:text="A Diligência"
+            android:textColor="@color/corFonte"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/bell"
+            android:drawablePadding="-25dp"/>
+    </androidx.appcompat.widget.Toolbar>
+</androidx.constraintlayout.widget.ConstraintLayout>
