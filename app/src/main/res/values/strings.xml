@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MyApplication2</string>
     <string name="title_activity_tela2">tela2</string>
+    <string name="botaoEntrar">ENTRAR</string>
+    <string name="esqueceuSenha">Esqueceu a sua senha?</string>
+    <string name="acesseCom">Ou acesse com:</string>
 </resources>

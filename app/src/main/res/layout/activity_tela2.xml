@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FCA30000"
+    android:background="@color/background2"
     tools:context=".tela2">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="380dp"
         android:layout_height="220dp"
-        android:layout_marginTop="16dp"
         android:layout_marginBottom="55dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
@@ -26,13 +25,13 @@
         android:drawableLeft="@android:drawable/ic_dialog_email"
         android:drawablePadding="10dp"
         android:hint="E-mail"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="@color/corFonte"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
+        app:layout_constraintVertical_bias="0.387" />
 
     <EditText
         android:id="@+id/editText"
@@ -41,45 +40,64 @@
         android:drawableLeft="@drawable/password"
         android:drawablePadding="10dp"
         android:hint="Senha"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="@color/corFonte"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53" />
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/esqueceuSenha"
+        android:textColor="@color/corFonte"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="330dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="155dp"
-        android:background="#800000"
-        android:text="ENTRAR"
-        android:textColor="#FFFFFF"
+        android:background="@drawable/roundedbutton"
+        android:onClick="proximaTela"
+        android:text="@string/botaoEntrar"
+        android:textColor="@color/corFonte"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:drawableStart="@drawable/arrow"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.933" />
+        app:layout_constraintVertical_bias="0.876" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="616dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="16dp"
-        android:background="#800000"
+        android:layout_marginBottom="65dp"
+        android:background="@color/background1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.939"
         app:srcCompat="@drawable/google" />
 
     <ImageButton
@@ -87,27 +105,44 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="616dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="16dp"
-        android:background="#800000"
+        android:layout_marginBottom="65dp"
+        android:background="@color/background1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.939"
         app:srcCompat="@drawable/facebook" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="Ou acesse com:"
-        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:text="@string/acesseCom"
+        android:textColor="@color/corFonte"
+        android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="59dp"
+        android:text="Não é cadastrado? Cadastre-se"
+        android:textColor="@color/corFonte"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
