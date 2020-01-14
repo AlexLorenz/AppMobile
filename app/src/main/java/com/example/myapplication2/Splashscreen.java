@@ -13,7 +13,6 @@ public class Splashscreen extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
-
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
         private void mostrarMainActivity() {
