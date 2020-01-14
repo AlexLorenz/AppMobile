@@ -6,10 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"></LinearLayout>
     <TextView
         android:id="@+id/textView"
         android:layout_width="300dp"
@@ -56,6 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:textColor="@color/background1"/>
+        tools:textColor="@color/background1"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
