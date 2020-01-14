@@ -10,10 +10,6 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity
-            android:name=".Activity_menu"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/NoActionBar"></activity>
         <activity android:name=".tela4" />
         <activity android:name=".toolbar" />
         <activity android:name=".tela3" />
