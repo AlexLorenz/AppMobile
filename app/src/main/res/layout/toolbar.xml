@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".toolbar">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
         app.titleTextColor="@android:color/white"
@@ -13,19 +14,9 @@
         android:background="@color/background2"
         android:minHeight="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="375dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-
-            android:text="A Diligência"
-            android:textColor="@color/corFonte"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp" />
     </androidx.appcompat.widget.Toolbar>
 
     <ImageView
@@ -48,7 +39,6 @@
         android:drawableLeft="@drawable/seach"
         android:drawablePadding="20dp"
         android:gravity="start|center_vertical"
-        android:hint="São Paulo"
         android:paddingLeft="15dp"
         android:textAlignment="gravity"
         android:textAllCaps="false"
