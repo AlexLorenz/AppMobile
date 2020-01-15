@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".Main2Activity"
+            android:name=".drawer"
             android:label="@string/title_activity_main2"
             android:theme="@style/NoActionBar"></activity>
         <activity android:name=".tela4" />
