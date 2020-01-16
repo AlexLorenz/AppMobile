@@ -11,7 +11,7 @@
         app.titleTextColor="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/background2"
+        android:background="@color/colorPrimary"
         android:minHeight="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -29,13 +29,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@color/background1" />
+        app:srcCompat="@color/colorPrimaryDark" />
 
     <EditText
         android:id="@+id/textView3"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:background="@color/background2"
+        android:background="@color/colorPrimary"
         android:drawableLeft="@drawable/seach"
         android:drawablePadding="20dp"
         android:gravity="start|center_vertical"

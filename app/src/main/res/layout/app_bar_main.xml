@@ -8,23 +8,25 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp">
-<!--        android:theme="@style/AppBarOverlay"-->
+        android:layout_height="60dp"
+        android:theme="@style/AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@color/background2">
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/PopupOverlay">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="A Diligência"
+                android:textSize="20dp"
+                android:textColor="@color/corFonte"
+                android:paddingRight="45dp"/>
         </androidx.appcompat.widget.Toolbar>
-<!--            app:popupTheme="@style/PopupOverlay" -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@color/background1"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main" />
