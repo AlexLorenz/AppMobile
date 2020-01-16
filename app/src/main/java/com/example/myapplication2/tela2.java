@@ -13,7 +13,7 @@ public class tela2 extends AppCompatActivity {
         setContentView(R.layout.activity_tela2);
     }
     public void proximaTela(View view) {
-        Intent intent = new Intent(this, tela3.class);
+        Intent intent = new Intent(this, drawer.class);
         startActivity(intent);
     }
 }
