@@ -10,7 +10,7 @@ public class tela2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela2);
+        setContentView(R.layout.activity_login);
     }
     public void proximaTela(View view) {
         Intent intent = new Intent(this, drawer.class);

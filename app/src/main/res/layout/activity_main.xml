@@ -27,7 +27,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="380dp"
+        android:layout_width="350dp"
         android:layout_height="220dp"
         android:layout_marginTop="46dp"
         android:layout_marginBottom="55dp"
@@ -41,8 +41,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="270dp"
-        android:layout_height="55dp"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/height"
         android:layout_marginTop="68dp"
         android:layout_marginBottom="87dp"
         android:background="@drawable/roundedbutton"
