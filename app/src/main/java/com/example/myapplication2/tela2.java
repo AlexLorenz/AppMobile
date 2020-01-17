@@ -16,4 +16,8 @@ public class tela2 extends AppCompatActivity {
         Intent intent = new Intent(this, drawer.class);
         startActivity(intent);
     }
+    public void telaCadastro(View view) {
+        Intent intent = new Intent(this, cadastro.class);
+        startActivity(intent);
+    }
 }

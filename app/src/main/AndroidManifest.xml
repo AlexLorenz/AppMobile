@@ -10,10 +10,11 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".cadastro"></activity>
         <activity
             android:name=".drawer"
             android:label="@string/title_activity_main2"
-            android:theme="@style/NoActionBar"></activity>
+            android:theme="@style/NoActionBar" />
         <activity android:name=".tela4" />
         <activity android:name=".toolbar" />
         <activity android:name=".tela3" />

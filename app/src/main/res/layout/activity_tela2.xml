@@ -140,6 +140,7 @@
         android:text="Não é cadastrado? Cadastre-se"
         android:textColor="@color/corFonte"
         android:textSize="18dp"
+        android:onClick="telaCadastro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
