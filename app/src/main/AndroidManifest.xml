@@ -15,7 +15,6 @@
             android:name=".drawer"
             android:label="@string/title_activity_main2"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".toolbar" />
         <activity android:name=".login" />
         <activity android:name=".MainActivity">
             <intent-filter>
