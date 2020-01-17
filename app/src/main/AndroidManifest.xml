@@ -15,10 +15,8 @@
             android:name=".drawer"
             android:label="@string/title_activity_main2"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".tela4" />
         <activity android:name=".toolbar" />
-        <activity android:name=".tela3" />
-        <activity android:name=".tela2" />
+        <activity android:name=".login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

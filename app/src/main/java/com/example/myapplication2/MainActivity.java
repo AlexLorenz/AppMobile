@@ -2,7 +2,6 @@ package com.example.myapplication2;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
-import android.os.Handler;
 import android.view.View;
 import android.os.Bundle;
 
@@ -18,7 +17,7 @@ public class MainActivity extends AppCompatActivity{
 //        handler.postDelayed(this, 2000);
     }
     public void proximaTela(View view) {
-        Intent intent = new Intent(this, tela2.class);
+        Intent intent = new Intent(this, login.class);
         startActivity(intent);
     }
 //    @Override
