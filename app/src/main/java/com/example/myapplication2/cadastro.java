@@ -22,12 +22,12 @@ public class cadastro extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 //            banco de Controller crud = new BancoController(gerBaseContext());
-            EditText nome = (EditText)findViewById(R.id.nome);
-            EditText email = (EditText)findViewById(R.id.email);
-            EditText senha = (EditText)findViewById(R.id.senha);
+            EditText nome      = (EditText)findViewById(R.id.nome);
+            EditText email     = (EditText)findViewById(R.id.email);
+            EditText senha     = (EditText)findViewById(R.id.senha);
             EditText senhaConf = (EditText)findViewById(R.id.senhaConf);
 
-            String nomeString = nome.getText().toString();
+            String nomeString  = nome.getText().toString();
             String emailString = email.getText().toString();
             String senhaString = senha.getText().toString();
             String senhaConfString = senhaConf.getText().toString();
