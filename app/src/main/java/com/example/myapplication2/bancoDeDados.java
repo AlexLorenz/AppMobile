@@ -13,8 +13,8 @@ public class bancoDeDados extends SQLiteOpenHelper {
     public static final String SENHA = "senha";
     private static final int VERSAO = 1;
 
-    public CriaBanco(Context context) {
-        super(context, NOME_BANCO, null, VERSAO);
+    public bancoDeDados(Context context) {
+        super(context, "banco.db", null, VERSAO);
     }
 
     @Override
@@ -34,3 +34,4 @@ public class bancoDeDados extends SQLiteOpenHelper {
         onCreate(db);
     }
 }
+//

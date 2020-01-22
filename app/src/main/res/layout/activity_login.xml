@@ -20,6 +20,7 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
+        android:id="@+id/emailLogin"
         android:layout_width="@dimen/width"
         android:layout_height="@dimen/height"
         android:backgroundTint="@color/colorPrimaryDark"
@@ -36,7 +37,7 @@
         app:layout_constraintVertical_bias="0.387" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/senhaLogin"
         android:layout_width="@dimen/width"
         android:layout_height="@dimen/height"
         android:backgroundTint="@color/colorPrimaryDark"
@@ -57,7 +58,7 @@
         android:layout_width="220dp"
         android:layout_height="40dp"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="31dp"
         android:layout_marginBottom="17dp"
         android:text="@string/esqueceuSenha"
@@ -67,7 +68,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/senhaLogin" />
 
     <Button
         android:id="@+id/button2"
@@ -77,7 +78,7 @@
         android:layout_marginBottom="155dp"
         android:background="@drawable/roundedbutton"
         android:drawableStart="@drawable/arrow"
-        android:onClick="proximaTela"
+        android:onClick="login"
         android:paddingLeft="90dp"
         android:paddingRight="100dp"
         android:text="@string/botaoEntrar"

@@ -37,6 +37,14 @@ public class BancoController {
     }
     public Cursor fazerLogin(String email, String senha) {
         db = banco.getWritableDatabase();
-        String[] sql = "SELECT * FROM " + TABELA + " WHERE"+ EMAIL +" = ;
+        String sql = "SELECT * FROM " + TABELA + " WHERE "+ EMAIL +" = ? AND " + SENHA +" = ?";
+        String[] selectionArgs = new String[]{ email, senha};
+        Cursor cursor = db.rawQuery(sql, selectionArgs);
+        if(cursor != null) {
+            cursor.moveToFirst();
+            return cursor;
+        } else {
+            return null;
+        }
     }
 }

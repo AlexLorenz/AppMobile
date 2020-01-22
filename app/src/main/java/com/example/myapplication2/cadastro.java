@@ -3,6 +3,7 @@ package com.example.myapplication2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -49,5 +50,9 @@ public class cadastro extends AppCompatActivity {
             }
         }
     });
+    }
+    public void retornaTela(View view) {
+        Intent intent = new Intent(this, login.class);
+        startActivity(intent);
     }
 }
