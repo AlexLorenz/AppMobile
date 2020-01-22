@@ -34,7 +34,7 @@ public class login extends AppCompatActivity {
                 String resSenha = cursor.getString(cursor.getColumnIndex("senha"));
 
                 if(strEmail.equals(resEmail) && strSenha.equals(resSenha)) {
-                    Toast.makeText(this, "Seja bem vindo.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Seja bem vindo.", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(this, drawer.class);
                     startActivity(intent);
                 } else {
@@ -49,10 +49,10 @@ public class login extends AppCompatActivity {
         }
     }
 
-    public void proximaTela(View view) {
-        Intent intent = new Intent(this, drawer.class);
-        startActivity(intent);
-    }
+//    public void proximaTela(View view) {
+//        Intent intent = new Intent(this, drawer.class);
+//        startActivity(intent);
+//    }
     public void telaCadastro(View view) {
         Intent intent = new Intent(this, cadastro.class);
         startActivity(intent);

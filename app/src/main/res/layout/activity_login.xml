@@ -78,7 +78,6 @@
         android:layout_marginBottom="155dp"
         android:background="@drawable/roundedbutton"
         android:drawableStart="@drawable/arrow"
-        android:onClick="login"
         android:paddingLeft="90dp"
         android:paddingRight="100dp"
         android:text="@string/botaoEntrar"

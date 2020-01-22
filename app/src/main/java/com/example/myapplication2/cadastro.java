@@ -51,8 +51,8 @@ public class cadastro extends AppCompatActivity {
         }
     });
     }
-    public void retornaTela(View view) {
-        Intent intent = new Intent(this, login.class);
-        startActivity(intent);
-    }
+//    public void retornaTela(View view) {
+//        Intent intent = new Intent(this, login.class);
+//        startActivity(intent);
+//    }
 }
