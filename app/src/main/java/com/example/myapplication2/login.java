@@ -1,7 +1,6 @@
 package com.example.myapplication2;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.database.Cursor;
 import android.view.View;
 import android.content.Intent;
