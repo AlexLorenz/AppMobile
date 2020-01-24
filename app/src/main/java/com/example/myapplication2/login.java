@@ -15,7 +15,6 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
-
     public void login(View view) {
         EditText email = findViewById(R.id.emailLogin);
         EditText senha = findViewById(R.id.senhaLogin);
@@ -24,7 +23,7 @@ public class login extends AppCompatActivity {
         boolean erro = false;
 
         if(strEmail.length() > 0 && strSenha.length() > 0) {
-            BancoController crud = new BancoController(getBaseContext());
+            bancoController crud = new bancoController(getBaseContext());
             Cursor cursor = crud.fazerLogin(strEmail, strSenha);
             if(cursor == null || cursor.getCount() == 0) {
                 erro = true;

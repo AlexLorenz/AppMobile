@@ -31,10 +31,24 @@
         android:textColorHint="@color/corFonte"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387" />
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:text="@string/esqueceuSenha"
+        android:textColor="@color/corFonte"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
 
     <EditText
         android:id="@+id/senhaLogin"
@@ -49,48 +63,10 @@
         android:textColorHint="@color/corFonte"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <TextView
-        android:layout_width="220dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="17dp"
-        android:text="@string/esqueceuSenha"
-        android:textColor="@color/corFonte"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senhaLogin" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="@dimen/width"
-        android:layout_height="@dimen/height"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="155dp"
-        android:background="@drawable/roundedbutton"
-        android:drawableStart="@drawable/arrow"
-        android:paddingLeft="90dp"
-        android:paddingRight="100dp"
-        android:text="@string/botaoEntrar"
-        android:textColor="@color/corFonte"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:onClick="login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
+        app:layout_constraintVertical_bias="0.485" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -104,28 +80,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939"
+        app:layout_constraintVertical_bias="0.961"
         app:srcCompat="@drawable/google" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginBottom="65dp"
-        android:background="@color/colorPrimaryDark"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/height"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="155dp"
+        android:background="@drawable/roundedbutton"
+        android:drawableStart="@drawable/arrow"
+        android:onClick="login"
+        android:paddingLeft="90dp"
+        android:paddingRight="100dp"
+        android:text="@string/botaoEntrar"
+        android:textColor="@color/corFonte"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939"
-        app:srcCompat="@drawable/facebook" />
+        app:layout_constraintVertical_bias="0.908" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:text="@string/acesseCom"
         android:textColor="@color/corFonte"
         android:textSize="18dp"
@@ -133,7 +116,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
+        app:layout_constraintVertical_bias="0.991" />
 
     <TextView
         android:layout_width="260dp"
@@ -149,6 +132,20 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="65dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961"
+        app:srcCompat="@drawable/facebook" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,11 +9,11 @@ import static com.example.myapplication2.bancoDeDados.EMAIL;
 import static com.example.myapplication2.bancoDeDados.SENHA;
 import static com.example.myapplication2.bancoDeDados.TABELA;
 
-public class BancoController {
+public class bancoController {
     private SQLiteDatabase db;
     private bancoDeDados banco;
 
-    public BancoController(Context context) {
+    public bancoController(Context context) {
         banco = new bancoDeDados(context);
     }
 

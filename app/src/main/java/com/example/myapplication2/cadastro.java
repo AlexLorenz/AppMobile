@@ -1,6 +1,5 @@
 package com.example.myapplication2;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -22,7 +21,7 @@ public class cadastro extends AppCompatActivity {
     botao.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            BancoController crud = new BancoController(getBaseContext());
+            bancoController crud = new bancoController(getBaseContext());
             EditText nome      = (EditText)findViewById(R.id.nome);
             EditText email     = (EditText)findViewById(R.id.email);
             EditText senha     = (EditText)findViewById(R.id.senha);
@@ -38,13 +37,13 @@ public class cadastro extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
             }else{
                 if (senhaString.equals(senhaConfString)) {
-//                    String resultado = "Cadastrou";
                     String resultado = crud.insereDado(nomeString, emailString, senhaString);
                     Toast toast = Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_SHORT);
                     toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,0);
                     toast.show();
 //                    Intent intent = new Intent(this, login.class);
 //                    startActivity(intent);
+
                 } else {
                     String resultado = "Senhas não conferem";
                     Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();

@@ -33,7 +33,7 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"></activity>
-        <activity android:name=".BancoController" />
+        <activity android:name=".bancoController" />
         <activity android:name=".cadastro" />
         <activity
             android:name=".drawer"
