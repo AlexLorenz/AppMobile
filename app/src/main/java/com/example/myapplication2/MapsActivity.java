@@ -32,7 +32,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
 
@@ -54,8 +55,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng esteio = new LatLng(-29.8524632,-51.1845758);
 
         // Add marcador no locar determinado e adiciona um titulo
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.addMarker(new MarkerOptions().position(esteio).title("Esteio"));
+        mMap.addMarker(new MarkerOptions()
+                .position(sydney)
+                .title("Marker in Sydney"));
+        mMap.addMarker(new MarkerOptions()
+                .position(esteio)
+                .title("Esteio"));
 
         // Ao iniciar move a camera para o local escolhido
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
@@ -69,6 +74,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             mMap.setMyLocationEnabled(true);
         }
+
         //Se não possuir, solicite
         else {
             if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -82,6 +88,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.getUiSettings().setCompassEnabled(true);
 
         // Adiciona rota
-        mMap.addPolyline(new PolylineOptions().add(sydney, esteio).width(10).color(Color.BLUE));
+        mMap.addPolyline(new PolylineOptions()
+                .add(sydney, esteio)
+                .width(10)
+                .color(Color.BLUE));
     }
 }
