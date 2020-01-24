@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".login">
+    tools:context=".Login">
 
     <ImageView
         android:id="@+id/imageView"
@@ -36,6 +36,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.36" />
 
+    <EditText
+        android:id="@+id/senhaLogin"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/height"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:textColor="@color/corFonte"
+        android:textColorHint="@color/corFonte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
     <TextView
         android:layout_width="220dp"
         android:layout_height="40dp"
@@ -49,39 +67,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.573" />
-
-    <EditText
-        android:id="@+id/senhaLogin"
-        android:layout_width="@dimen/width"
-        android:layout_height="@dimen/height"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:drawableLeft="@drawable/password"
-        android:drawablePadding="10dp"
-        android:hint="Senha"
-        android:inputType="textPassword"
-        android:textColor="@color/corFonte"
-        android:textColorHint="@color/corFonte"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.485" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginBottom="65dp"
-        android:background="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961"
-        app:srcCompat="@drawable/google" />
 
     <Button
         android:id="@+id/button2"
@@ -117,6 +102,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.991" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="65dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961"
+        app:srcCompat="@drawable/google" />
 
     <TextView
         android:layout_width="260dp"

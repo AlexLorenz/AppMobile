@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity{
 //        handler.postDelayed(this, 2000);
     }
     public void proximaTela(View view) {
-        Intent intent = new Intent(this, login.class);
+        Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
 //    @Override

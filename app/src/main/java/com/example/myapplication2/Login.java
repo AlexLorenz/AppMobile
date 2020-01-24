@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class login extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +48,7 @@ public class login extends AppCompatActivity {
     }
 
 //    public void proximaTela(View view) {
-//        Intent intent = new Intent(this, drawer.class);
+//        Intent intent = new Intent(this, Drawer.class);
 //        startActivity(intent);
 //    }
     public void telaCadastro(View view) {

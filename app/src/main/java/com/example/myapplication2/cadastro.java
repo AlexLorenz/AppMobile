@@ -41,7 +41,7 @@ public class cadastro extends AppCompatActivity {
                     Toast toast = Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_SHORT);
                     toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,0);
                     toast.show();
-//                    Intent intent = new Intent(this, login.class);
+//                    Intent intent = new Intent(this, Login.class);
 //                    startActivity(intent);
 
                 } else {
@@ -53,7 +53,7 @@ public class cadastro extends AppCompatActivity {
     });
     }
 //    public void retornaTela(View view) {
-//        Intent intent = new Intent(this, login.class);
+//        Intent intent = new Intent(this, Login.class);
 //        startActivity(intent);
 //    }
 }

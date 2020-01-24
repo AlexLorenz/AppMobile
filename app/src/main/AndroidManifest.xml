@@ -36,10 +36,10 @@
         <activity android:name=".bancoController" />
         <activity android:name=".cadastro" />
         <activity
-            android:name=".drawer"
+            android:name=".Drawer"
             android:label="@string/title_activity_main2"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".login" />
+        <activity android:name=".Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
