@@ -13,6 +13,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
@@ -53,9 +54,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng sydney = new LatLng(-29.7549941, -51.150283);
         LatLng esteio = new LatLng(-29.8524632,-51.1845758);
 
-        // Add marcador no locar determinado e adiciona um titulo
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.addMarker(new MarkerOptions().position(esteio).title("Esteio"));
+        // Adiciona marcadores
+        mMap.addMarker(new MarkerOptions()
+                .position(sydney)                 //Define a posicao
+                .title("Marker in Sydney")        //Define o titulo
+                // Define configuracoes de aparendia do icone
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(esteio)
+                .title("Esteio")
+                .alpha(0.7f)         // Define a opacidade do icone do marcador
+                // Define o icone do marcador
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.bell)));
 
         // Ao iniciar move a camera para o local escolhido
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
