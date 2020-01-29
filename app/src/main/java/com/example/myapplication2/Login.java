@@ -15,6 +15,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
+
     public void login(View view) {
         EditText email = findViewById(R.id.emailLogin);
         EditText senha = findViewById(R.id.senhaLogin);
@@ -25,6 +26,7 @@ public class Login extends AppCompatActivity {
         if(strEmail.length() > 0 && strSenha.length() > 0) {
             bancoController crud = new bancoController(getBaseContext());
             Cursor cursor = crud.fazerLogin(strEmail, strSenha);
+
             if(cursor == null || cursor.getCount() == 0) {
                 erro = true;
             } else {
@@ -33,7 +35,7 @@ public class Login extends AppCompatActivity {
 
                 if(strEmail.equals(resEmail) && strSenha.equals(resSenha)) {
                     Toast.makeText(this, "Seja bem vindo.", Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(this, MapsActivity.class);
+                    Intent intent = new Intent(this, Drawer.class);
                     startActivity(intent);
                 } else {
                     erro = true;

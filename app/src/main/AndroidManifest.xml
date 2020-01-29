@@ -29,6 +29,11 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="com.google.android.geo.AIzaSyDVri9-BQ2aPTNY8VlvG8niNEpQdMcCzTM"
+            android:value="AIzaSyDVri9-BQ2aPTNY8VlvG8niNEpQdMcCzTM" />
+
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"></activity>
@@ -53,5 +58,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
