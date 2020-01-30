@@ -45,6 +45,8 @@ public class Drawer extends AppCompatActivity {
 
         //Cria uma variável do tipo NavController que busca o plano que ficará no fundo da tela, logo a baixo da toolbar, se retirado o botão que abre a Drawer não aparece
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+
+
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
