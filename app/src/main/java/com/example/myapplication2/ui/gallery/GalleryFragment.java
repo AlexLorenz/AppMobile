@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.myapplication2.R;
 
-public class BuscaCepFragment extends Fragment {
+public class GalleryFragment extends Fragment {
 
     private GalleryViewModel galleryViewModel;
 
