@@ -36,7 +36,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final String[] LOCATION_PERMS={Manifest.permission.ACCESS_FINE_LOCATION};
     private static final int INITIAL_REQUEST = 1337;
     private static final int LOCATION_REQUEST = INITIAL_REQUEST + 3;
-    private static final int LOCATION_REQUEST=INITIAL_REQUEST + 3;
+//    private static final int LOCATION_REQUEST=INITIAL_REQUEST + 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
