@@ -15,13 +15,24 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.myapplication2.R;
 
-public class HomeFragment extends AppCompatActivity {
+public class HomeFragment extends Fragment {
 
-//    private HomeViewModel homeViewModel;
+    private HomeViewModel homeViewModel;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
+
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        homeViewModel =
+                ViewModelProviders.of(this).get(HomeViewModel.class);
+        View root = inflater.inflate(R.layout.activity_maps, container, false);
+//        final TextView textView = root.findViewById(R.id.text_home);
+//        homeViewModel.getText().observe(this, new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
+        return root;
+
     }
 }
